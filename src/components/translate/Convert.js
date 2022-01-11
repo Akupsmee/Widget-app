@@ -27,7 +27,7 @@ const Convert = ({ language, text }) => {
                     q: debouncedTerm,
                     source: "en",
                     target: language.label,
-                    key: "AIzaSyCHUCmpR7cT_yDFHC98CZJy2LTms-IwDlM"
+                    key: process.env.REACT_APP_KEY
                 }
             })
             const res = await response.data.data.translations[0].translatedText
